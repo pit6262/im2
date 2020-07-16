@@ -259,6 +259,74 @@ $(function(){
 		});
 	};
 
+	if($('.news-slider-2').length){
+		$('.news-slider-2').slick({
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			dots: true,
+			appendArrows: '.news-slider-2-nav', 
+			appendDots: '.news-slider-2-nav',
+			responsive: [
+				
+				{
+					breakpoint: 1260,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3,
+					}
+				},
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2,
+					}
+				},
+				{
+					breakpoint: 575,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					}
+				}
+			]
+		});
+	};
+
+	if($('.news-slider-3').length){
+		$('.news-slider-3').slick({
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			dots: true,
+			appendArrows: '.news-slider-3-nav', 
+			appendDots: '.news-slider-3-nav',
+			responsive: [
+				
+				{
+					breakpoint: 1260,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3,
+					}
+				},
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2,
+					}
+				},
+				{
+					breakpoint: 575,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					}
+				}
+			]
+		});
+	};
+
 
 	if($('.interesting-slider').length){
 		$('.interesting-slider').slick({
@@ -327,6 +395,77 @@ $(function(){
 			]
 		});
 	};
+
+	if($('.reviews-slider').length){
+		$('.reviews-slider').slick({
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			dots: true,
+			appendArrows: '.reviews-slider-nav', 
+			appendDots: '.reviews-slider-nav',
+			responsive: [
+				
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2,
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2,
+					}
+				},
+				{
+					breakpoint: 575,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					}
+				}
+			]
+		});
+	};
+
+	if($('.cards-week').length){
+		$('.cards-week').slick({
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			dots: true,
+			rows: 2,
+			appendArrows: '.cards-week-nav', 
+			appendDots: '.cards-week-nav',
+			responsive: [
+				
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2,
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2,
+					}
+				},
+				{
+					breakpoint: 575,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					}
+				}
+			]
+		});
+	};
+
+	
 
 	$(window).resize(function(event) {
 	    adaptive_function();

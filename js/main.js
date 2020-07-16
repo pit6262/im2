@@ -211,14 +211,13 @@ $(function(){
 			appendArrows: '.news-slider-nav', 
 			appendDots: '.news-slider-nav',
 			responsive: [
-				
-				
-				
 				{
 					breakpoint: 575,
 					settings: {
 						slidesToShow: 1,
 						slidesToScroll: 1,
+						variableWidth: true,
+
 					}
 				}
 			]
@@ -253,6 +252,8 @@ $(function(){
 					settings: {
 						slidesToShow: 1,
 						slidesToScroll: 1,
+						variableWidth: true,
+
 					}
 				}
 			]
@@ -287,6 +288,8 @@ $(function(){
 					settings: {
 						slidesToShow: 1,
 						slidesToScroll: 1,
+						variableWidth: true,
+
 					}
 				}
 			]
@@ -321,6 +324,8 @@ $(function(){
 					settings: {
 						slidesToShow: 1,
 						slidesToScroll: 1,
+						variableWidth: true,
+
 					}
 				}
 			]
@@ -356,6 +361,8 @@ $(function(){
 					settings: {
 						slidesToShow: 1,
 						slidesToScroll: 1,
+						variableWidth: true,
+
 					}
 				}
 			]
@@ -415,17 +422,11 @@ $(function(){
 				{
 					breakpoint: 768,
 					settings: {
-						slidesToShow: 2,
-						slidesToScroll: 2,
-					}
-				},
-				{
-					breakpoint: 575,
-					settings: {
 						slidesToShow: 1,
 						slidesToScroll: 1,
 					}
-				}
+				},
+				
 			]
 		});
 	};
@@ -441,7 +442,7 @@ $(function(){
 			responsive: [
 				
 				{
-					breakpoint: 992,
+					breakpoint: 1260,
 					settings: {
 						slidesToShow: 2,
 						slidesToScroll: 2,
@@ -450,17 +451,12 @@ $(function(){
 				{
 					breakpoint: 768,
 					settings: {
-						slidesToShow: 2,
-						slidesToScroll: 2,
-					}
-				},
-				{
-					breakpoint: 575,
-					settings: {
 						slidesToShow: 1,
 						slidesToScroll: 1,
 					}
-				}
+				},
+
+				
 			]
 		});
 	};
@@ -476,9 +472,22 @@ $(function(){
 	        slidesToShow: 2,
 	        slidesToScroll: 2,
 	        dots: true,
+	        rows: 4,
 	        appendArrows: '.category-list-nav', 
 			appendDots: '.category-list-nav',
-			
+			responsive: [
+				
+				
+				{
+					breakpoint: 420,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+					}
+				},
+				
+				
+			]
 	      }
 	    if(w>575){
 	      if ($slick_slider.hasClass('slick-initialized')) {

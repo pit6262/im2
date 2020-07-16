@@ -632,7 +632,7 @@ body {
   .news-inner__grid .comment, .tour-inner__grid .comment, .shop-inner__grid .comment {
     margin-left: auto; }
 
-.tour-list-nav, .interesting-slider-nav {
+.tour-list-nav, .interesting-slider-nav, .news-slider-nav {
   position: static !important;
   margin-top: 2rem; }
 
@@ -917,6 +917,10 @@ body {
 /* Search Block */
 .search-block {
   margin-bottom: 4.4rem; }
+  .search-block__item {
+    margin-bottom: 3rem; }
+    .search-block__item:last-child {
+      margin-bottom: 0; }
   .search-block__form {
     position: relative; }
   .search-block__input {
@@ -1490,22 +1494,34 @@ body {
   .reviews-inner__top {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-    align-items: center;
     -ms-flex-pack: justify;
     justify-content: space-between;
     border-left: .3rem solid #34a1d3;
     padding-left: 1.4rem;
     margin-bottom: 1.7rem; }
-    .reviews-inner__top-right .rating {
-      display: block;
-      text-align: right; }
-      .reviews-inner__top-right .rating__stars {
-        margin-right: -.4rem;
-        margin-bottom: .4rem; }
+    .reviews-inner__top-left {
+      padding-right: 1rem;
+      overflow: hidden;
+      -ms-flex: 1;
+      flex: 1; }
+    .reviews-inner__top-right {
+      -ms-flex: none;
+      flex: none; }
+      .reviews-inner__top-right .rating {
+        display: block;
+        text-align: right; }
+        .reviews-inner__top-right .rating__stars {
+          margin-right: -.4rem;
+          margin-bottom: .4rem; }
+    .reviews-inner__top .rating {
+      margin-top: .3rem; }
   .reviews-inner__title {
     font-size: 1.6rem;
-    font-weight: 700; }
+    font-weight: 700;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   .reviews-inner__name {
     font-size: 1.2rem;
     font-weight: 700; }
@@ -4261,6 +4277,9 @@ html {
     display: flex;
     padding-right: 0;
     margin: 1.3rem -0; }
+  /* Weeks */
+  .card-horizontal__img {
+    width: 12rem; }
   .card-wrapper {
     margin-top: 2.5rem; }
     .card-wrapper__head .title {
@@ -4383,6 +4402,8 @@ html {
     height: 30rem; }
   .box-gallery-inner__img {
     height: 11.6rem; }
+  .card-horizontal__img {
+    width: 16.4rem; }
   .card__basket .icon {
     font-size: 2.6rem; }
   .card .counter__input {
@@ -4447,26 +4468,19 @@ html {
     .poster-list__info .price {
       display: block; }
   .category-list {
-    margin-left: -.8rem;
-    margin-right: -.8rem;
+    margin-bottom: -2rem;
     margin-top: -.7rem; }
     .category-list .slick-slide {
-      padding-left: .8rem;
-      padding-right: .8rem;
       margin-top: .7rem; }
-  .category-inner__title {
-    font-size: 1.2rem; }
-  .category-inner__icon {
-    margin-right: .9rem;
-    width: 4rem;
-    height: 4rem;
-    border-radius: .5rem; }
+    .category-list__item {
+      margin-bottom: 2rem; }
   .category-grid__item {
     padding-left: .7rem;
     padding-right: .7rem;
     padding-top: 4rem;
     padding-bottom: 4rem; }
-  .category-grid__title {
+  .category-grid__title,
+  .category-inner__title {
     font-size: 1.4rem; }
   .box-banner-inner {
     height: auto;
@@ -4474,5 +4488,16 @@ html {
   .box-gallery-inner__img {
     height: auto;
     padding-top: 43.5%; }
-  .shop-inner {
-    max-width: none; } }
+  .slick-list .news-slider-2__item,
+  .slick-list .news-slider-3__item,
+  .slick-list .news-slider__item,
+  .slick-list .tour-list__item,
+  .slick-list .interesting-slider__item {
+    width: 32rem !important; } }
+
+@media screen and (max-width: 420px) {
+  .card-horizontal {
+    display: block; }
+    .card-horizontal__img {
+      margin-right: 0;
+      margin-bottom: 1.2rem; } }

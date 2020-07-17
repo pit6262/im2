@@ -31,35 +31,35 @@ $(function(){
 		})
 	}
 	mmMenu();
-	// function ctMenu() {
-	// 	$('.ct-item > a').on('click', function(){
-	// 		$('.ct-item').not($(this).parent()).removeClass('is-active')
-	// 		$(this).parent().toggleClass('is-active')
+	function ctMenu() {
+		$('.ct-item > a').on('click', function(){
+			$('.ct-item').not($(this).parent()).removeClass('is-active')
+			$(this).parent().toggleClass('is-active')
 			
-	// 		return false;
-	// 	})
-	// }
-	// ctMenu();
+			return false;
+		})
+	}
+	ctMenu();
 
-	// function ctFilterMenu() {
-	// 	$('.ct-filter-item > a').on('click', function(){
-	// 		$('.ct-filter-item').not($(this).parent()).removeClass('is-active')
-	// 		$(this).parent().toggleClass('is-active')
+	function ctFilterMenu() {
+		$('.ct-filter-item > a').on('click', function(){
+			$('.ct-filter-item').not($(this).parent()).removeClass('is-active')
+			$(this).parent().toggleClass('is-active')
 			
-	// 		return false;
-	// 	})
+			return false;
+		})
 
-	// 	$('.ct-filter-option > a').on('click', function(){
-	// 		var thisText = $(this).html();
-	// 		$(this).parents('.ct-filter-item').find('.ct-filter-option').removeClass('is-active')
-	// 		$(this).parent().addClass('is-active')
-	// 		$(this).parents('.ct-filter-item').removeClass('is-active').addClass('is-selected')
-	// 		$(this).parents('.ct-filter-item').children('a').html(thisText);
-	// 		return false;
+		$('.ct-filter-option > a').on('click', function(){
+			var thisText = $(this).html();
+			$(this).parents('.ct-filter-item').find('.ct-filter-option').removeClass('is-active')
+			$(this).parent().addClass('is-active')
+			$(this).parents('.ct-filter-item').removeClass('is-active').addClass('is-selected')
+			$(this).parents('.ct-filter-item').children('a').html(thisText);
+			return false;
 			
-	// 	})
-	// }
-	// ctFilterMenu();
+		})
+	}
+	ctFilterMenu();
 
 	
 

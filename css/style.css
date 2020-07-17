@@ -1013,7 +1013,8 @@ body {
   .list li {
     padding-left: 1rem;
     position: relative;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    margin-bottom: .5rem; }
     .list li:before {
       content: '';
       display: block;
@@ -1106,14 +1107,7 @@ body {
     transform: rotate(90deg); }
   .ct-menu__item.is-active > ul {
     display: block; }
-
-.ct-menu__link {
-  position: relative;
-  display: block;
-  font-size: 1.4rem;
-  font-weight: 700;
-  padding-right: 1rem; }
-  .ct-menu__link:after {
+  .ct-menu__item.ct-item .ct-menu__link:after {
     content: '';
     display: block;
     position: absolute;
@@ -1126,6 +1120,13 @@ body {
     border-width: 0.35rem 0 0.35rem 0.4rem;
     border-color: transparent transparent transparent #fa4242;
     transition: all 0.2s linear; }
+
+.ct-menu__link {
+  position: relative;
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-right: 1rem; }
 
 .ct-menu ul {
   display: none;
@@ -1165,7 +1166,8 @@ body {
   font-weight: 500; }
 
 .ct-filter-menu a {
-  color: #393939; }
+  color: #393939;
+  transition: none; }
 
 .ct-filter-menu ul {
   display: none;
@@ -1188,10 +1190,9 @@ body {
     border-style: solid;
     border-width: 0.35rem 0 0.35rem 0.4rem;
     border-color: transparent transparent transparent #fa4242;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin-top: -.2rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: .6rem;
     transition: all 0.2s linear; }
 
 .ct-filter-item.is-active > ul {
@@ -1214,15 +1215,17 @@ body {
 .ct-filter .checkbox {
   font-size: inherit;
   font-weight: inherit;
-  padding: 0;
-  margin: 0; }
+  padding: 0 2.6rem 0 0;
+  margin: 0;
+  display: inline-block;
+  position: relative; }
   .ct-filter .checkbox__figure {
-    position: relative;
-    top: -.1rem;
+    position: absolute;
+    top: .1rem;
+    right: 0;
     left: auto;
     display: inline-block;
-    vertical-align: middle;
-    margin-left: .6rem; }
+    vertical-align: middle; }
   .ct-filter .checkbox__text {
     padding: 0; }
 

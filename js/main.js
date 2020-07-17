@@ -102,24 +102,24 @@ $(function(){
 
 	
 
-	// function openNavAndFilter() {
-	// 	$('.open-nav').on('click', function(){
+	function openNavAndFilter() {
+		$('.open-nav').on('click', function(){
 			
-	// 		$(this).toggleClass('is-active')
-	// 		$('.fix-filter').slideUp('200')
-	// 		$('.open-filter').removeClass('is-active')
-	// 		$('.fix-nav').slideToggle('200')
-	// 		return false;
-	// 	})
-	// 	$('.open-filter').on('click', function(){
-	// 		$('.fix-nav').slideUp('200')
-	// 		$('.open-nav').removeClass('is-active')
-	// 		$(this).toggleClass('is-active')
-	// 		$('.fix-filter').slideToggle('200')
-	// 		return false;
-	// 	})
-	// }
-	// openNavAndFilter();
+			$(this).toggleClass('is-active')
+			$('.fix-filter').slideUp('200')
+			$('.open-filter').removeClass('is-active')
+			$('.fix-nav').slideToggle('200')
+			return false;
+		})
+		$('.open-filter').on('click', function(){
+			$('.fix-nav').slideUp('200')
+			$('.open-nav').removeClass('is-active')
+			$(this).toggleClass('is-active')
+			$('.fix-filter').slideToggle('200')
+			return false;
+		})
+	}
+	openNavAndFilter();
 
 	
 

@@ -611,7 +611,8 @@ body {
     font-size: 1.2rem; }
 
 /* News slider */
-.news-slider, .interesting-slider {
+.news-slider, .interesting-slider, .news-slider-2, .news-slider-3,
+.tour-list {
   overflow: visible !important; }
 
 .news-inner__img, .tour-inner__img, .shop-inner__img {
@@ -4724,4 +4725,13 @@ html {
     display: block; }
     .card-horizontal__img {
       margin-right: 0;
-      margin-bottom: 1.2rem; } }
+      margin-bottom: 1.2rem; }
+  .category-inner__icon {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: .7rem;
+    margin-right: 1rem; }
+    .category-inner__icon .icon {
+      font-size: 1.8rem; }
+  .category-inner__title {
+    font-size: 1.2rem; } }

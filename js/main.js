@@ -472,22 +472,10 @@ $(function(){
 	        slidesToShow: 2,
 	        slidesToScroll: 2,
 	        dots: true,
-	        rows: 4,
+	        
 	        appendArrows: '.category-list-nav', 
 			appendDots: '.category-list-nav',
-			responsive: [
-				
-				
-				{
-					breakpoint: 420,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1,
-					}
-				},
-				
-				
-			]
+			
 	      }
 	    if(w>575){
 	      if ($slick_slider.hasClass('slick-initialized')) {

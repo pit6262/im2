@@ -562,4 +562,8 @@ $(function(){
 	});
 
 
+	$('.datepicker-here').datepicker({
+		inline: true,
+	})
+
 });

@@ -5487,8 +5487,15 @@ html {
       vertical-align: middle; }
   .master__date {
     position: static; }
+  .poster-list__title {
+    -ms-flex: 1;
+    flex: 1;
+    width: auto; }
   .poster-list__info {
-    padding-left: 1rem; }
+    padding-left: 1rem;
+    width: auto;
+    -ms-flex: none;
+    flex: none; }
     .poster-list__info .date {
       display: block;
       margin-right: 0; }
@@ -5506,8 +5513,7 @@ html {
     padding-right: .7rem;
     padding-top: 4rem;
     padding-bottom: 4rem; }
-  .category-grid__title,
-  .category-inner__title {
+  .category-grid__title {
     font-size: 1.4rem; }
   .box-banner-inner {
     height: auto;
@@ -5550,13 +5556,4 @@ html {
     display: block; }
     .card-horizontal__img {
       margin-right: 0;
-      margin-bottom: 1.2rem; }
-  .category-inner__icon {
-    height: 3.5rem;
-    width: 3.5rem;
-    border-radius: .7rem;
-    margin-right: 1rem; }
-    .category-inner__icon .icon {
-      font-size: 1.8rem; }
-  .category-inner__title {
-    font-size: 1.2rem; } }
+      margin-bottom: 1.2rem; } }

@@ -2034,6 +2034,223 @@ body {
   .grid-item--height2 a {
     height: 35.2rem; }
 
+.calendar {
+  box-shadow: 0.3rem 0.3rem 0.4rem rgba(57, 57, 57, 0.6), -0.3rem -0.3rem 0.4rem #fff;
+  background: #e9edf0;
+  border-radius: 1rem 1rem 0 0;
+  padding: 2.8rem;
+  margin-bottom: 5rem;
+  max-width: 32rem; }
+  .calendar__title {
+    position: relative;
+    min-height: 1.9rem;
+    padding-left: 3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 1.6rem;
+    margin-bottom: 1.9rem; }
+    .calendar__title .icon {
+      font-size: 1.9rem;
+      color: #fa4242;
+      margin-right: 1.4rem;
+      position: absolute;
+      top: -.3rem;
+      left: 0; }
+    .calendar__title:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: block;
+      height: 3px;
+      box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.13);
+      background-color: #e9edf0; }
+  .calendar .datepicker-inline .datepicker {
+    background: transparent;
+    border: none;
+    width: auto;
+    font-family: "Montserrat";
+    color: #393939;
+    font-size: 1.2rem;
+    margin: 0 -.6rem; }
+  .calendar .datepicker--nav, .calendar .datepicker--content {
+    padding: 0; }
+  .calendar .datepicker--nav {
+    min-height: 1px;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0 .7rem; }
+  .calendar .datepicker--nav-action {
+    -ms-flex-order: 2;
+    order: 2;
+    width: .4rem;
+    height: .7rem;
+    margin-left: .5rem; }
+    .calendar .datepicker--nav-action svg {
+      display: none; }
+    .calendar .datepicker--nav-action[data-action="next"]:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 0.35rem 0 0.35rem 0.4rem;
+      border-color: transparent transparent transparent #fa4242; }
+    .calendar .datepicker--nav-action[data-action="prev"]:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 0.35rem 0.4rem 0.35rem 0;
+      border-color: transparent #fa4242 transparent transparent; }
+  .calendar .datepicker--nav-title {
+    -ms-flex-order: 1;
+    order: 1;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-right: auto;
+    position: relative;
+    padding-right: 1.2rem;
+    padding-left: 0; }
+    .calendar .datepicker--nav-title:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: -.3rem;
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 0.4rem 0.35rem 0 0.35rem;
+      border-color: #fa4242 transparent transparent transparent; }
+  .calendar .datepicker--nav-title i {
+    color: inherit; }
+  .calendar .datepicker--day-name {
+    color: #7d7d7d;
+    font-size: .9rem;
+    font-weight: 700; }
+  .calendar .datepicker--cell {
+    font-size: .9rem;
+    font-weight: 500;
+    color: #7d7d7d; }
+  .calendar .datepicker--cell-day.-other-month-,
+  .calendar .datepicker--cell-year.-other-decade- {
+    color: #b9b9b9; }
+  .calendar .datepicker--cell.-selected-, .calendar .datepicker--cell.-selected-.-current- {
+    background: #34a1d3;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.25); }
+  .calendar .datepicker--cell.-current- {
+    color: #fff;
+    background: #34a1d3; }
+  .calendar .lightpick {
+    background: transparent;
+    box-shadow: none;
+    display: block;
+    padding: 0; }
+    .calendar .lightpick__month {
+      width: auto;
+      padding: 0;
+      background: transparent; }
+      .calendar .lightpick__month-title {
+        padding: 0;
+        margin: 0; }
+    .calendar .lightpick__months {
+      display: block;
+      background: transparent; }
+  .calendar .lightpick__month-title-bar {
+    margin-bottom: 1rem; }
+  .calendar .lightpick__month-title > .lightpick__select-months,
+  .calendar .lightpick__month-title > .lightpick__select {
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 700;
+    font-family: "Montserrat"; }
+  .calendar .lightpick__days-of-the-week {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    text-align: center; }
+  .calendar .lightpick__day-of-the-week {
+    width: 14.28%;
+    color: #7d7d7d;
+    font-size: .9rem;
+    font-weight: 700;
+    height: 2.5rem; }
+  .calendar .lightpick__days {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .calendar .lightpick__day {
+    width: 14.28%;
+    color: #7d7d7d;
+    font-size: .9rem;
+    font-weight: 500;
+    height: 2.5rem; }
+  .calendar .lightpick__day.is-previous-month, .calendar .lightpick__day.is-next-month {
+    opacity: 1;
+    color: #b9b9b9; }
+  .calendar .lightpick__day.is-start-date,
+  .calendar .lightpick__day.is-end-date,
+  .calendar .lightpick__day.is-start-date:hover,
+  .calendar .lightpick__day.is-end-date:hover {
+    background: none;
+    position: relative;
+    z-index: 1;
+    font-weight: 500; }
+    .calendar .lightpick__day.is-start-date:after,
+    .calendar .lightpick__day.is-end-date:after,
+    .calendar .lightpick__day.is-start-date:hover:after,
+    .calendar .lightpick__day.is-end-date:hover:after {
+      content: '';
+      display: block;
+      height: 1.9rem;
+      width: 1.9rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      background: #34a1d3;
+      border-radius: 50%;
+      z-index: -1;
+      box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.25); }
+  .calendar .lightpick__previous-action, .calendar .lightpick__next-action {
+    width: .4rem;
+    height: .7rem;
+    background: none;
+    text-indent: -999px;
+    overflow: hidden;
+    margin-left: .5rem;
+    padding: 0; }
+  .calendar .lightpick__previous-action:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0.35rem 0.4rem 0.35rem 0;
+    border-color: transparent #fa4242 transparent transparent; }
+  .calendar .lightpick__next-action:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0.35rem 0 0.35rem 0.4rem;
+    border-color: transparent transparent transparent #fa4242; }
+
 /* Banner */
 .banner-cards-wrap {
   margin-top: 5rem; }

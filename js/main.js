@@ -498,32 +498,7 @@ $(function(){
 	$(window).resize(function(event) {
 	    adaptive_function();
 	  });
-	  function adaptive_header(w,h) {
-	      $slick_slider = $('.category-list');
-	      settings = {
-	        slidesToShow: 2,
-	        slidesToScroll: 2,
-	        dots: true,
-	        
-	        appendArrows: '.category-list-nav', 
-			appendDots: '.category-list-nav',
-			
-	      }
-	    if(w>575){
-	      if ($slick_slider.hasClass('slick-initialized')) {
-	          $slick_slider.slick('unslick');
-	        }
-	        return
-	    }else{
-	      if (!$slick_slider.hasClass('slick-initialized')) {
-	        return $slick_slider.slick(settings);
-	      }
-	    }
-
-	   
-
-	    
-	  }
+	 
 	function adaptive_header2(w,h) {
 	   $slick_slider2 = $('.interesting-wrap');
 	      settings2 = {
@@ -550,7 +525,7 @@ $(function(){
 	function adaptive_function() {
 	  var w=$(window).outerWidth();
 	  var h=$(window).outerHeight();
-	adaptive_header(w,h);
+	
 	adaptive_header2(w,h);
 	}
 	adaptive_function();

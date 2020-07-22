@@ -110,6 +110,15 @@ $(function(){
 	}
 	openMoreBlock();
 
+
+	function openComment() {
+		$('.js-open-comment').on('click', function(){
+			$('.comment-block').slideToggle(0)
+			
+			return false;
+		})
+	}
+	openComment();
 	
 
 	// function closeSearch() {
@@ -194,6 +203,18 @@ $(function(){
 			type: 'inline',
 			midClick: true,
 			
+		});
+	}
+
+	if($(".p-gallery" ).length>0){
+		$('.p-gallery').each(function() { // the containers for all your galleries
+		    $(this).magnificPopup({
+		        delegate: 'a', // the selector for gallery item
+		        type: 'image',
+		        gallery: {
+		          enabled:true
+		        }
+		    });
 		});
 	}
 
@@ -539,6 +560,8 @@ $(function(){
 
 	$('.datepicker-here').datepicker({
 		inline: true,
+		range: true,
+		toggleSelected: false,
 	})
 
 });

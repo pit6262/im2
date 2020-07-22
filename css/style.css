@@ -899,7 +899,10 @@ body {
     font-size: 2rem;
     vertical-align: middle;
     color: #fa4242;
-    margin-left: .5rem; }
+    margin-left: .8rem; }
+  .comment:hover {
+    color: #fa4242;
+    text-decoration: none; }
 
 .price, .time {
   font-size: 1.2rem;
@@ -1248,13 +1251,24 @@ body {
 
 /* Search Block */
 .search-block {
-  margin-bottom: 4.4rem; }
-  .search-block__item {
-    margin-bottom: 3rem; }
-    .search-block__item:last-child {
-      margin-bottom: 0; }
-  .search-block__form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 1.4rem; }
+  .search-block__form, .search-block__info {
+    margin-bottom: 3rem;
     position: relative; }
+  .search-block__form {
+    -ms-flex: 1;
+    flex: 1; }
+  .search-block__info {
+    -ms-flex: none;
+    flex: none;
+    width: 19.5rem;
+    margin-left: 6.5rem; }
   .search-block__input {
     height: 3.2rem;
     border-radius: 1rem;
@@ -1353,9 +1367,8 @@ body {
       content: '';
       display: block;
       position: absolute;
-      top: 50%;
+      top: .5rem;
       left: 0;
-      margin-top: -.3rem;
       width: 0px;
       height: 0px;
       border-style: solid;
@@ -2121,7 +2134,12 @@ body {
     background-size: cover;
     height: 16.9rem; }
   .grid-item--width-1 {
-    width: calc(16.66% - 1.4rem); }
+    display: -ms-flexbox;
+    display: flex; }
+    .grid-item--width-1 a {
+      width: calc(50% - .7rem); }
+      .grid-item--width-1 a + a {
+        margin-left: 1.4rem; }
   .grid-item--height2 a {
     height: 35.2rem; }
 
@@ -5506,6 +5524,11 @@ html {
     margin-bottom: -6rem; }
     .rw__item {
       margin-bottom: 6rem; }
+  .search-block {
+    display: block; }
+    .search-block__info {
+      margin-left: 0;
+      width: auto; }
   .promo-wrap {
     margin-bottom: 5rem; }
   .promo__title {
@@ -5632,6 +5655,9 @@ html {
       vertical-align: middle; }
   .master__date {
     position: static; }
+  .master__top .rating {
+    margin-right: .5rem;
+    margin-top: .1rem; }
   .poster-list__title {
     -ms-flex: 1;
     flex: 1;

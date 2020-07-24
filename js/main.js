@@ -269,7 +269,7 @@ $(function(){
 					settings: {
 						slidesToShow: 1,
 						slidesToScroll: 1,
-						variableWidth: true,
+						
 
 					}
 				}
@@ -305,7 +305,7 @@ $(function(){
 					settings: {
 						slidesToShow: 1,
 						slidesToScroll: 1,
-						variableWidth: true,
+						
 
 					}
 				}
@@ -341,7 +341,7 @@ $(function(){
 					settings: {
 						slidesToShow: 1,
 						slidesToScroll: 1,
-						variableWidth: true,
+						
 
 					}
 				}
@@ -377,7 +377,7 @@ $(function(){
 					settings: {
 						slidesToShow: 1,
 						slidesToScroll: 1,
-						variableWidth: true,
+						
 
 					}
 				}
@@ -414,7 +414,7 @@ $(function(){
 					settings: {
 						slidesToShow: 1,
 						slidesToScroll: 1,
-						variableWidth: true,
+						
 
 					}
 				}
@@ -526,7 +526,7 @@ $(function(){
 	        slidesToShow: 1,
 	        slidesToScroll: 1,
 	        dots: true,
-	        variableWidth: true,
+	       
 	        appendArrows: '.interesting-wrap-nav', 
 			appendDots: '.interesting-wrap-nav',
 			

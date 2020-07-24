@@ -5431,7 +5431,7 @@ html {
     padding-right: 0;
     margin: 1.3rem -0; }
   /* Weeks */
-  .card-horizontal__img, .interesting-inner__img {
+  .card-horizontal__img, .interesting-inner__img, .banner-card-horizontal .banner-card__img {
     width: 12rem; }
   .card-wrapper {
     margin-top: 2.5rem; }

@@ -2763,7 +2763,7 @@ img {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   .paging-list__item {
-    margin-right: 1.4rem; }
+    margin-right: 1.2rem; }
     .paging-list__item:last-child {
       margin-right: 0; }
     .paging-list__item.paging-prev .paging-list__link {

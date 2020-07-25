@@ -90,6 +90,14 @@ $(function(){
 			
 			return false;
 		})
+
+		$(document).click( function(event){
+	      if( $(event.target).closest(".search-int").length ) 
+	        return;
+	      $(".search-int").removeClass('is-open')
+	      $('.open-search').removeClass('is-active')
+	      event.stopPropagation();
+	    });
 	}
 	openSearch();
 

@@ -217,11 +217,49 @@ $(function(){
 	if($(".p-gallery" ).length>0){
 		$('.p-gallery').each(function() { // the containers for all your galleries
 		    $(this).magnificPopup({
+		        delegate: '.img-gallery-info', // the selector for gallery item
+		        type: 'image',
+		        image: {
+		        titleSrc: false,
+		        markup: '<div class="mfp-figure mfp-figure-info">'+
+		                  '<div class="mfp-close"></div>'+
+		                  '<div class="popup-gallery">'+
+		                  	  '<div class="popup-gallery__img">'+
+			                      '<div class="mfp-img"></div>'+
+			                  '</div>'+
+			                  '<div class="popup-gallery__info">'+
+			                    
+			                  '</div>'+
+			              '</div>'+
+		                '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+			    },
+			    callbacks: {
+			        // this - is Magnific Popup object.
+			        change: function() {
+			            $(this.content)
+			                .find('.popup-gallery__info')
+			                .html(
+			                    
+			                        $(this.currItem.el).next().html() 
+			                );
+			        }
+			    },
+			    gallery: {
+			        enabled: true
+			    }
+		    });
+		});
+	}
+
+	if($(".i-gallery" ).length>0){
+		$('.i-gallery').each(function() { // the containers for all your galleries
+		    $(this).magnificPopup({
 		        delegate: 'a', // the selector for gallery item
 		        type: 'image',
-		        gallery: {
-		          enabled:true
-		        }
+		       
+			    gallery: {
+			        enabled: true
+			    }
 		    });
 		});
 	}

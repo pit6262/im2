@@ -90,7 +90,7 @@
 									<li><a href="#">Прокат авто и мото</a></li>
 								</ul>
 							</li>
-							<li class="main-menu__item "><a href="#" class="main-menu__link">Подписка</a></li>
+							<li class="main-menu__item "><a href="#popup-subscribe" class="main-menu__link open-popup">Подписка</a></li>
 						</ul>
 					</div>
 				
@@ -400,7 +400,7 @@
 								<a href="#" class="btn btn--default btn-js js-open-comment"><svg class="icon icon--l icon-comment"><use xlink:href="img/sprite.svg#comment"></use></svg>Комментарии (2)</a>
 							</div>
 							<div class="comment-add">
-								Были в этом месте? <br><a href="#">Оставьте отзыв</a>
+								Были в этом месте? <br><a href="#" class="js-open-reviews">Оставьте отзыв</a>
 							</div>
 						</div>
 
@@ -457,6 +457,31 @@
 									</div>
 								</div>
 							</div>
+
+							<div class="comment-form">
+								<form action="#">
+									<div class="comment-form__wrap">
+										<div class="comment-form__name">
+											<div class="form-field">
+												<input type="text" class="form-input form-input--t-center" placeholder="Ваше имя*">
+											</div>
+										</div>
+										<div class="comment-form__message">
+											<div class="form-field">
+												<textarea class="form-input form-input" placeholder="Введите ваш комментарий"></textarea>
+											</div>
+										</div>
+										<div class="comment-form__btn">
+											<button type="submit" class="form-btn-arrow hidden-sm"></button>
+											<button type="submit" class="btn btn--default visible-sm">Отправить</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+
+						<div class="comment-block-form" style="display: none">
+							<div class="comment-block-form__title">Оставьте отзыв</div>
 
 							<div class="comment-form">
 								<form action="#">
@@ -912,6 +937,21 @@
 	<!-- FOOTER EOF   -->
 
 	
+	<div id="popup-subscribe" class="popup mfp-hide">
+		
+		<h2 class="popup__title ">Подпишитесь на новости сайта</h2>
+		<form action="#" class="popup-form">
+			
+			<div class="form-field">
+				<input type="text" class="form-input form-input--default " placeholder="Ваш e-mail">
+			</div>
+	
+			<div class="form-field">
+				<input type="submit" class="btn btn--danger" value="Оформить подписку">
+			</div>
+	
+		</form>
+	</div>
 
 </div>
 <!-- BODY EOF   -->

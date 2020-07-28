@@ -122,10 +122,21 @@ $(function(){
 	function openComment() {
 		$('.js-open-comment').on('click', function(){
 			$(this).toggleClass('is-active')
+			$('.comment-block-form').slideUp(0)
 			$('.comment-block').slideToggle(0)
 			
 			return false;
 		})
+
+		$('.js-open-reviews').on('click', function(){
+			$(this).toggleClass('is-active')
+			$('.comment-block').slideUp(0)
+			$('.comment-block-form').slideToggle(0)
+			
+			return false;
+		})
+
+		
 	}
 	openComment();
 	

@@ -121,6 +121,7 @@ $(function(){
 
 	function openComment() {
 		$('.js-open-comment').on('click', function(){
+			$(this).toggleClass('is-active')
 			$('.comment-block').slideToggle(0)
 			
 			return false;
@@ -552,6 +553,15 @@ $(function(){
 					settings: {
 						slidesToShow: 1,
 						slidesToScroll: 1,
+					}
+				},
+				{
+					breakpoint: 420,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						variableWidth: true,
+
 					}
 				},
 
